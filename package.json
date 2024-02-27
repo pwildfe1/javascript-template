@@ -1,0 +1,24 @@
+{
+  "name": "javascript-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwildfe1/javascript-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pwildfe1/javascript-template/issues"
+  },
+  "homepage": "https://github.com/pwildfe1/javascript-template#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "get-port": "^7.0.0",
+    "open": "^10.0.4"
+  }
+}
