@@ -6,7 +6,31 @@
 </head>
 
 <body>
+
 <script>"app.js"</script>
+<input type="file" id="fileInput">
+<button onclick="loadFile()">Load File</button>
+
+<script>
+    function loadFile() {
+        const fileInput = document.getElementById('fileInput');
+        const file = fileInput.files[0];
+
+        if (file) {
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                const content = e.target.result;
+                console.log('File content:', content);
+            };
+
+            reader.readAsText(file);
+        } else {
+            console.error('No file selected.');
+        }
+    }
+</script>
+
 </body>
 
 </html>
